@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+</head>
+<body>
 	<header class="main-header">
 		
 		<nav class="main-navigation">
 
 			<ul class="site-navigation">
-			<li><a href="hotels.html">Гостиницы</a></li>
-			<li><a href="maps.html">Карта штата</a></li>
-			<li><a href="foto-video.html">Фото и видео</a></li>
-			<li><a href="info.html">Информация</a></li>
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="foto-video.html">Фото и видео</a></li>
+				<li><a href="maps.html">Карта штата</a></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
+			
+			
+			
 		</ul>
 
 		<a class="main-header-logo">
@@ -24,15 +27,15 @@
 
 	</header>
 
-	<main>
+	<main class="container">
 
 		<div class="intro">
-			
+			<h1 class="page title">Sedona</h1>
+
 			<p>welcome<br>
 			- to the gorgeous-</p>
 
-			<h1>sedona</h1>
-
+			
 			<q>Because the Grand Canyon sucks</q>
 
 			<p>
@@ -114,9 +117,19 @@
 			Укажите предполагаемые даты поездки,<br>
 			И мы покажем вам лучшие предложения гостиниц в Седоне
 		</p>
-		<!--Здесь будет форма-->
 		</section>
+		<section class="modal modal-data-current">
+      <h2>Поиск гостиницы в Седоне</h2>
+      <!-- Здесь будет форма -->
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map.svg" alt="Карта">
+    </section>
+
 	</main>
+
 	<footer class="main-footer">
 		<span>#visitsedona</span>
 		
@@ -128,14 +141,10 @@
 			</ul>
 		</div>
 
-		<a class="main-footer-logo">websyte by
-		<img src="img/logo_html.svg" alt="Логотип HTMLAcademy">
+		<span>websyte by</span>
+		<a href="https://htmlacademy.ru/intensive/htmlcss"  class="main-footer-logo"><img src="img/logo_html.svg"  alt="Логотип HTMLAcademy">
 		</a>
 
 	</footer>
-	<section class="modal modal-map">
-		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<span class="modal-close">x</span>
-	</section>
 </body>
 </html>

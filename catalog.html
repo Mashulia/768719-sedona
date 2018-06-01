@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona hotels</title>
+</head>
+
 <body>
 
 	<header class="main-header">
@@ -11,25 +12,23 @@
 		<nav class="main-navigation">
 
 			<ul class="site-navigation">
-			<li><a href="hotels.html">Гостиницы</a></li>
-			<li><a href="maps.html">Карта штата</a></li>
-			<li><a href="foto-video.html">Фото и видео</a></li>
-			<li><a href="info.html">Информация</a></li>
-		</ul>
-
-		<a class="main-header-logo">
-		<img src="img/logo.svg" width="" height="" alt="Логотип Седоны">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="foto-video.html">Фото и видео</a></li>
+				<li><a href="maps.html">Карта штата</a></li>
+				<li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+			</ul>
+		<a href="index.html" class="main-header-logo">
+		<img src="img/logo.svg"  alt="Логотип Седоны">
 		</a>
 
 		</nav>
 	</header>
 
-	<main>
+	<main class="container">
+		<h1 class="visually-hidden">Каталог гостиниц</h1>
 
-		<h1 class="visually-hidden">Каталог отелей</h1>
-
-		<section class="selection_hotel">
-			<h2>Выбор отеля</h2>
+		<section class="filters">
+		<h2 class="visually-hidden">Фильтр гостиниц</h2>
 			<!--Здесь будет форма-->
 			<section class="sort">
 			<!--Здесь будет форма-->
@@ -37,11 +36,16 @@
 		</section>
 
 		<section class="catalog">
+			<h2 class="visually-hidden">Список гостиниц</h2>
 
-			<div class="catalog-item">
-				<img src="img/hotel.svg" alt="Amara resort & spa">
-				<a href="#" class="hotel-name">
-					<h2>Amara resort & spa</h2>
+			<ul class="catalog-list">
+
+				<li class="catalog-item">
+					<h3>
+						<a href="catalog-item.html">Amara resort & spa</a>
+					</h3>
+				<a href="catalog-item.html">
+					<img src="img/hotel.svg" alt="Amara resort & spa">
 				</a>
 				<table>
 					<tr>
@@ -52,13 +56,16 @@
 					<a href="#" class="btn btn-info">Подробнее</a>
             		<a href="#" class="btn btn-boking">Забронировать</a>
 				<p class="rating">Рейтинг: 8,5</p>
-			</div>
+			</li>
 
-			<div class="catalog-item">
+			<li class="catalog-item">
+				<h3>
+					<a href="catalog-item.html">Desert Quail Inn</a>
+				</h3>
+				<a href="catalog-item.html">
 				<img src="img/motel.svg" alt="Desert Quail Inn">
-				<a href="#" class="hotel-name">
-					<h2>Desert Quail Inn</h2>
-				</a>
+			</a>
+					
 				<table>
 					<tr>
 						<td>Мотель</td>
@@ -68,12 +75,14 @@
 					<a href="#" class="btn btn-info">Подробнее</a>
             		<a href="#" class="btn btn-boking">Забронировать</a>
 				<p class="rating">Рейтинг: 8,9</p>
-			</div>
+			</li>
 
-			<div class="catalog-item">
+			<li class="catalog-item">
+				<h3>
+					<a href="catalog-item.html">Villas at Poco Diablo</a>
+				</h3>
+				<a href="catalog-item.html">
 				<img src="img/apartment.svg" alt="Villas at Poco Diablo">
-				<a href="#" class="hotel-name">
-					<h2>Villas at Poco Diablo</h2>
 				</a>
 				<table>
 					<tr>
@@ -84,7 +93,8 @@
 					<a href="#" class="btn btn-info">Подробнее</a>
             		<a href="#" class="btn btn-boking">Забронировать</a>
 				<p class="rating">Рейтинг: 9,2</p>
-			</div>
+			</li>
+			</ul>
 		</section>
 
 
@@ -102,8 +112,10 @@
 			<li><a class="social-button" href="#">Ютуб</a></li>
 			</ul>
 		</div>
-		<a class="main-footer-logo">websyte by
-		<img src="img/logo_html.svg" width="" height="" alt="Логотип HTMLAcademy">
+		<span>websyte by</span>
+		<a href="https://htmlacademy.ru/intensive/htmlcss"  class="main-footer-logo"><img src="img/logo_html.svg"  alt="Логотип HTMLAcademy">
 		</a>
 
 	</footer>
+</body>
+</html>
