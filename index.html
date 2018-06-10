@@ -21,10 +21,11 @@
 
 	<main class="container">
 		<h1 class="visually-hidden">Седона</h1>
-	    <img src="img/background_index.jpg" alt="Превью" width="1200" height="800">
+	    <img src="img/background_index.jpg" alt="Главное фото Седона" width="1200" height="800">
 		
 		<div class="entry">
-			<p class="intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+			<p class="intro">Седона — небольшой городок в Аризоне,<br>
+			 заслуживающий большего!</p>
 			<p class="caption">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 		</div>
 
@@ -55,62 +56,65 @@
 
 		<ul class="features-list">
 			<li class="features-item">
-			<h3 class="feature-title">Настоящий городок</h3>
-			<span>-№1-</span>
-			<p class="definition">Седона - неаттракцион для туристов, там течет своя жизнь</p>
+			<h3 class="feature-title">Настоящий<br> городок</h3>
+			<span class="number">-№1-</span>
+			<p class="definition">Седона - неаттракцион для туристов,<br> там течет своя жизнь</p>
 			<img src="img/city_1200.jpg" alt="городок"  width="800" height="401">
 			</li>
 		
 			<li class="features-item">
-			<h3 class="feature-title">Там есть мост дьявола</h3>
-			<span>-№2-</span>
-			<p class="definition">Да, по нему можно пройти! Если конечно вы осмелитесь</p>	
+			<h3 class="feature-title">Там есть<br> мост дьявола</h3>
+			<span class="number">-№2-</span>
+			<p class="definition">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>	
 			<img src="img/bridge_1200.jpg" alt="Мост" width="800" height="400">
 			</li>
 
 			<li class="features-item">
-			<h3 class="feature-title">Небольшая площадь</h3>
-			<span>-№3-</span>
-			<p class="definition">Все достопримечательности находятся очень близко</p>
+			<h3 class="feature-title">Небольшая<br> площадь</h3>
+			<span class="number">-№3-</span>
+			<p class="definition">Все достопримечательности<br> находятся очень близко</p>
 			</li>
 
 			<li class="features-item">
-			<h3 class="feature-title">Красивая дорога</h3>
-			<span>-№4-</span>
-			<p class="definition">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>	
+			<h3 class="feature-title">Красивая<br> дорога</h3>
+			<span class="number">-№4-</span>
+			<p class="definition">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>	
 			</li>
 
 			<li class="features-item">
-			<h3 class="feature-title">Мало туристов</h3>
-			<span>-№5-</span>
-			<p class="definition">Большинство едет в Гранд Каньон и толпится там</p>
+			<h3 class="feature-title">Мало<br> туристов</h3>
+			<span class="number">-№5-</span>
+			<p class="definition">Большинство едет в Гранд Каньон<br> и толпится там</p>
 			</li>	
 		</ul>
 		</section>
 
 		<section class="modal modal-data-current">
 			<h2 class="modal-title">Заинтересовались?</h2>
-			<p class="modal-info">
-			Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+			<p class="modal-tip">
+			Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>	
       	<button class="modal-close" type="button">Поиск гостиницы в Седоне</button>
-      	<form class="data-form" action="https://echo.htmlacademy.ru" method="post">
-      		<p>
-      			<label for="arrival-date">Дата заезда:</label>
-      			<input class="select-arrival" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
-      		</p>
-      		<p>
+      	<form class="data-form" action="https://echo.htmlacademy.ru" method="get">
+      		<div class="modal-form-group">
+      			<label >Дата заезда:
+      			<input class="select-arrival" type="text" name="arrival-date" placeholder="24 апреля 2017">
+      			</label>
+      		</div>
+      		<div class="modal-form-group">
       			<label for="departure-date">Дата выезда:</label>
-      			<input class="select-departure" type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
-      		</p>
-      		<p>
-      			<label for="adults">Взрослые</label>
-      			<input class="select-adults" type="text" name="adults" id="adults" placeholder="2">
-      		</p>
-      		<p>
-      			<label for="children">Дети</label>
-      			<input class="select-child" type="text" name="children" id="children" placeholder="0">
-      		</p>
+      			<input class="select-departure" type="text" name="departure-date" id="departure-date-field" placeholder="4 июля 2017">
+      		</div>
+      		<div class="modal-form-group">
+      			<label >Взрослые:
+      			<input class="select-adults" type="text" name="adults" placeholder="2">
+      			</label>
+      		</div>
+      		<div class="modal-form-group">
+      			<label>Дети:
+      			<input class="select-child" type="text" name="children" placeholder="0">
+      			</label>
+      		</div>
       		<button class="button" type="submit">Найти</button>
       	</form>
     	</section>
@@ -126,15 +130,15 @@
 		<b>#visitsedona</b>
 		
 		<div class="social">
-			<ul>
-			<li><a class="social-button" href="#">Твиттер</a></li>
-			<li><a class="social-button" href="#">Фейсбук</a></li>
-			<li><a class="social-button" href="#">Ютуб</a></li>
+			<ul class="social-list">
+			<li><a class="social-btn" href="#">Твиттер</a></li>
+			<li><a class="social-btn" href="#">Фейсбук</a></li>
+			<li><a class="social-btn" href="#">Ютуб</a></li>
 			</ul>
 		</div>
 
-	<div class="copyright">
-		<span>websyte by</span>
+	<div class="footer-copyright">
+		<span class="copyright">websyte by</span>
 		<a href="https://htmlacademy.ru/intensive/htmlcss"  class="main-footer-logo"><img src="img/logo-htmlacademy.svg"  alt="Логотип HTMLAcademy" width="115" height="41">
 		</a>
 	</div>
