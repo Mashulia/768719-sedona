@@ -1,63 +1,58 @@
 
-/*Глобальные стили*/
+/*Типографика*/
 body {
-
-	margin: 0;
-	padding: 0;
-
-	font-family: "PT Sans", Arial, sans-serif;
-  	font-size: 14px;
-  	line-height: 21px;
-  	font-weight: normal;
-  	color: #333333;
-  	text-transform: uppercase;
-  	background-color: #ffffff;
+  margin: 0;
+	padding: 0 ;
+  width: 100%;
+  font-size: 14px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 a {
   	text-decoration: none;
 }
-/*Закончились глобальные стили*/
 
-/*Стили шапки*/
 .main-navigation {
-  	line-height: 26px;
-  	font-weight: bold;
-  	color: #000000;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .site-navigation {
-  	list-style: none;
+  list-style: none;
 }
 
 .site-navigation a {
-  	color: #000000;
+  color: #000000;
 }
 
 .site-navigation a:hover {
-  	color: #81b3d2;
+  color: #81b3d2;
 }
 
 .site-navigation a:active {
 	color: rgba(0, 0, 0, 0.3);
-} 
+}
 
 .site-navigation-current {
 	color: #766357;
-} 
-/*Здесь закончились стили шапки*/
+}
 
-/*Главная часть 1-й страницы*/
 .entry {
 	text-align: center;
 	line-height: 26px;
 }
+
 .intro {
 	font-size: 21px;
-  	font-weight: bold;
-  	color: #000000;
+  font-weight: bold;
+  color: #000000;
 }
-
 
 .offers-list,
 .features-list {
@@ -79,6 +74,7 @@ a {
 .feature-city,
 .feature-bridge {
 	background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .feature-square,
@@ -89,29 +85,27 @@ a {
 
 .modal-title {
 	font-size: 30px;
-  	line-height: 36px;
-  	font-weight: bold;
-  	color: #000000;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .modal-tip {
-  	font-weight: normal;
-  	line-height: 24px;
+  font-weight: normal;
+  line-height: 24px;
 }
-/*Закончилась  главная часть 1-й стр*/
 
-/*Стили подвала*/
 .inviting {
-  	font-size: 21px;
-  	line-height: 26px;
-  	font-weight: bold;
-  	color: #000000;
-  	text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
 }
 
 .social-list {
-  	list-style: none;
-  	text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 .social-btn {
@@ -136,46 +130,44 @@ a {
   	line-height: 26px;
   	color: #000000;
 }
-/*Закончились стили подвала*/
 
-/*Модальные окна*/
 .modal-close {
+  font-size: 21px;
 	font-family: inherit;
-  	font-size: 21px;
-  	line-height: 26px;
-  	font-weight: bold;
-  	text-align: center;
-  	color: #ffffff;
-  	vertical-align: middle;
-  	text-transform: uppercase;
-  	border: none;
-  	background-color: #766357;
-  	width: 568px;
-  	height: 86px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  background-color: #766357;
+  width: 568px;
+  height: 86px;
 }
 
 .modal-close:hover {
 	background-color: #604e43;
 }
 
-
 .modal-close:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
+
 .modal-form-group {
 	font-weight: bold;
 	line-height: 26px;
 }
 
 .modal-form-group input[type="text"] {
-  	font: inherit;
-  	color: #000000;
-  	text-transform: uppercase;
-  	background-color: #f2f2f2;
-  	border: none;
-  	width: 346px;
-  	height: 38px;
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+  width: 346px;
+  height: 38px;
 }
 
 .modal-form-group input[type="text"]:hover {
@@ -191,39 +183,34 @@ a {
 input[type="text"].select-child ,
 input[type="text"].select-adults  {
 	width: 38px;
-  	height: 38px;
-  	text-align: center;
+  height: 38px;
+  text-align: center;
 }
 
 .button {
+  font-size: 21px;
 	font-family: inherit;
-  	font-size: 21px;
-  	line-height: 26px;
-  	font-weight: bold;
-  	text-align: center;
-  	color: #ffffff;
-  	vertical-align: middle;
-  	text-transform: uppercase;
-  	border: none;
-  	background-color: #81b3d2;
-  	width: 458px;
-  	height: 58px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  background-color: #81b3d2;
+  width: 458px;
+  height: 58px;
 }
 
 .button:hover {
 	background-color: #669ec0;
 }
 
-
 .button:active {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
 }
 
-
-/*Закончились модальные окна*/
-
-/*Стили 2-й стр*/
 .filters {
 	background-color: #81b3d2;
 	background-image: url("../img/filter_background.jpg");
@@ -236,29 +223,19 @@ input[type="text"].select-adults  {
 .filter-title {
 	font-size: 16px;
 }
-.filter-item:hover,
-.filter-item:focus {
-  	color: #ffffff;
-}
-
-.filter-item:disabled {
-  	color: #6a6a6a;
-
-  	opacity: 0.5;
-}
 
 .filter-button {
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
-  	color: #ffffff;
-  	width: 133px;
-  	height: 32px;
+  color: #ffffff;
+  width: 133px;
+  height: 32px;
 }
 
 .filter-button:hover {
-  	color: #000000;
-  	background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .filter-list,
@@ -269,14 +246,15 @@ input[type="text"].select-adults  {
 
 .sort {
 	font-size: 12px;
-  	line-height: 18px;
-  	color: #000000;
+  line-height: 18px;
+  color: #000000;
 }
+
 .sort a {
-  	color: rgba(0, 0, 0, 0.3);
-  	border-bottom: 1px dashed #81b3d2;
-  	font-size: inherit;
-  	line-height: inherit;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #81b3d2;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .sort a:hover,
@@ -289,40 +267,43 @@ input[type="text"].select-adults  {
 	color: #000000;
 }
 
+.sort,
+.catalog-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .hotel-name,
 .total {
 	font-size: 21px;
-  	line-height: 26px;
-  	font-weight: bold;
-  	color: #000000;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .rating {
+  text-align: center;
 	color: #666666;
 	background-color: #f2f2f2;
+  width: 110px;
+  height: 27px;
 }
 
-/*Стили для кнопок 2-й страницы*/
 .btn {
-  	font-family: inherit;
-  	font-size: inherit;
-  	line-height: 21px;
-  	font-weight: bold;
-  	text-align: center;
-  	color: #ffffff;
-  	vertical-align: middle;
-  	text-transform: uppercase;
-  	border: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+
 }
 
 .btn-info {
 	background-color: #81b3d2;
-	
-}
-
-a .btn-info {
-	width: 110px;
-	height: 27px;
+  width: 110px;
+  height: 27px;
 }
 
 .btn-info:hover {
@@ -347,4 +328,230 @@ a .btn-info {
 .btn-booking:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
+}
+
+/*Стили для сеток*/
+.html,
+.body {
+  min-width: 768px;
+  min-height: 2762px;
+}
+
+.site-navigation {
+  padding: 0 73px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1056px;
+  height: 56px;
+  background-color: #ffffff;
+}
+
+.site-navigation-item {
+  padding-top: 15px;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+}
+
+.container,
+.main-footer {
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.main-photo {
+  width: 1200px;
+  height: 800px;
+}
+
+.intro {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+}
+
+.caption {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.offers-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  order: -1;
+}
+
+.offers-item {
+  width: 300px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.features-item{
+   height: 257px;
+}
+
+.feature-city {
+order: -2;
+}
+
+.feature-city,
+.feature-bridge {
+  display: flex;
+}
+
+.feature-bridge {
+  flex-direction: row-reverse;
+}
+
+.description {
+  padding-top: 45px;
+  width: 400px;
+}
+
+.portrait {
+  width: 800px;
+ height: 257px;
+}
+
+.feature-title {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.add-on{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-square,
+.feature-road,
+.feature-tourist {
+  width: 400px;
+  height: 257px;
+  padding-top: 44px;
+}
+
+.modal-title {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-tip {
+  margin-bottom: 50px;
+}
+
+.modal-map {
+  width: 1200px;
+  height: 475px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+}
+
+.inviting,
+.footer-copyright,
+.social{
+  align-self: center;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.filter{
+  display: flex;
+  width: 1056px;
+  min-height: 185px;
+  padding: 40px 73px;
+  margin: 0 auto;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.sort {
+  display: flex;
+  width: 530px;
+  padding: 40px 73px;
+  justify-content: space-between;
+}
+
+.sort-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.facilities {
+  margin-right: 110px;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.filter-button {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item {
+  padding: 30px 73px;
+  display: flex;
+  height: 150px;
+}
+
+.catalog-item img {
+  width: 135px;
+  height: 90px;
+  margin-right: 20px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.hotel-name {
+  margin: 0;
+  padding: 0;
+}
+
+.rating {
+  margin-left: auto;
+  margin-top: 96px;
 }
