@@ -30,7 +30,7 @@
 			</nav>
 	   </header>
 
-		  <main class="container">
+		  <main>
 
 			 <h1 class="visually-hidden">Седона</h1>
 			 <img class="main-photo" src="img/background-1200.jpg"  width="1200" height="780" alt="Главное фото Седона">
@@ -125,7 +125,7 @@
 			   </ol>
 		    </section>
 
-				<section class="modal modal-data-current">
+				<section class="modal-data-current">
 				 <h2 class="modal-title">Заинтересовались?</h2>
 				 <p class="modal-tip">Укажите предполагаемые даты поездки,<br>
 					и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -133,7 +133,7 @@
               Поиск гостиницы в Седоне
           </button>
 
-				  <form class="data-form" action="https://echo.htmlacademy.ru" method="get">
+				  <form class="modal" action="https://echo.htmlacademy.ru" method="get">
 					 <div class="modal-form-group">
 						<label for="arrival-date">Дата заезда:</label>
 						<input class="select-arrival" id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
@@ -144,15 +144,17 @@
 						<input class="select-departure" id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
 					 </div>
 
-					 <div class="modal-form-group">
-						<label for="adults">Взрослые:</label>
-						<input class="select-adults" id="adults" type="text" name="adults" value="" placeholder="2">
-          </div>
+           <div class="input-wrapper">
+					   <div class="modal-form-group">
+						  <label for="adults">Взрослые:</label>
+						  <input class="select-adults" id="adults" type="text" name="adults" value="" placeholder="2">
+            </div>
 
-					 <div class="modal-form-group">
-						<label for="children">Дети:</label>
-						<input class="select-child" id="children" type="text" name="children" value="" placeholder="0">
-					</div>
+					   <div class="modal-form-group">
+						  <label for="children">Дети:</label>
+					    <input class="select-child" id="children" type="text" name="children" value="" placeholder="0">
+					  </div>
+          </div>
 					<button class="button search" type="submit">Найти</button>
 				</form>
 			 </section>
@@ -194,5 +196,6 @@
       </div>
 	   </footer>
    </div>
+   <div class="modal-overlay"></div>
   </body>
 </html>
