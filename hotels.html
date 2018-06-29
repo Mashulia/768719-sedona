@@ -92,6 +92,7 @@
         </form>
       </section>
 
+    <div class="catalog-header">
       <div class="sort">
         <p class="total">Найдено: 3</p>
         <p class="title">Сортировка:</p>
@@ -106,32 +107,56 @@
         </ul>
       </div>
 
+      <div class="switch">
+        <span class="switch-up">
+          <a href="#">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+              <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/>
+            </svg></a>
+        </span>
+        <span class="switch-down switch-current">
+          <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg></a>
+        </span>
+      </div>
+    </div>
+
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
-          <ul class="catalog-list">
-            <li class="catalog-item">
-              <div class="information">
-                <h3 class="hotel-name">
-                  <a href="catalog-item.html">Amara resort & spa</a>
-                </h3>
-                  <p class="first">
-                    <span class="place">Гостиница</span>
-                    <span class="price">от 4000 р.</span>
-                  </p>
-                  <p>
-                    <a class="btn btn-info" href="#info">Подробнее</a>
-                    <a class="btn btn-booking" href="#book">Забронировать</a>
-                  </p>
-                </div>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/amara.jpg" width="135" height="90" alt="Amara resort & spa">
-                </a>
+
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/amara.jpg" width="135" height="90" alt="Amara resort & spa">
+              </a>
+            </div>
+            <div class="information">
+              <h3 class="hotel-name">
+                <a href="catalog-item.html">Amara resort & spa</a>
+              </h3>
+              <p class="first">
+                <span class="place">Гостиница</span>
+                <span class="price">от 4000 р.</span>
               </p>
-              <span class="rating rating-1">Рейтинг: 8,5</span>
+              <p>
+                <a class="btn btn-info" href="#info">Подробнее</a>
+                <a class="btn btn-booking" href="#book">Забронировать</a>
+              </p>
+            </div>
+            <div class="ratings-item">
+              <div class="star-rating"></div>
+                <p>Рейтинг: 8,5</p>
+              </div>
             </li>
 
             <li class="catalog-item">
+              <div class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+                </a>
+              </div>
               <div class="information">
                 <h3 class="hotel-name">
                   <a href="catalog-item.html">Desert Quail Inn</a>
@@ -145,15 +170,18 @@
                   <a class="btn btn-booking" href="#book">Забронировать</a>
                 </p>
               </div>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
-                </a>
-              </p>
-              <span class="rating rating-2">Рейтинг: 8,9</span>
+              <div class="ratings-item">
+                <div class="star-rating star-rating-1"></div>
+                <p>Рейтинг: 8,9</p>
+              </div>
             </li>
 
             <li class="catalog-item">
+              <div class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                </a>
+              </div>
               <div class="information">
                 <h3 class="hotel-name">
                   <a href="catalog-item.html">Villas at Poco Diablo</a>
@@ -167,21 +195,19 @@
                     <a class="btn btn-booking" href="#book">Забронировать</a>
                   </p>
                 </div>
-                <p class="catalog-item-image">
-                  <a href="catalog-item.html">
-                    <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-                  </a>
-                </p>
-              <span class="rating">Рейтинг: 9,2</span>
+                <div class="ratings-item">
+                  <div class="star-rating star-rating-2"></div>
+                  <p>Рейтинг: 9,2</p>
+                </div>
             </li>
           </ul>
         </section>
       </main>
       <footer class="main-footer">
-      <div class="wrapper">
-       <span class="inviting">#visitsedona</span>
+        <div class="footer-wrapper">
+          <span class="inviting">#visitsedona</span>
 
-       <div class="social">
+        <div class="social">
          <ul class="social-list">
           <li>
            <a class="social-btn" href="#twitter"><span class="visually-hidden">Твиттер</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>

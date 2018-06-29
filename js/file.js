@@ -5,11 +5,9 @@ var date = popup.querySelector("[name=arrival-date]");
 
 open.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.toggle("closed");
+  popup.classList.toggle("modal-show");
   date.focus();
 });
 
-// close.addEventListener("click", function (evt) {
-//     evt.preventDefault();
-//     popup.classList.remove("modal-show");
-//   });
+document.documentElement
+        .classList.replace('no-js', 'js');
