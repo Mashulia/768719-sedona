@@ -160,7 +160,7 @@ input[type="checkbox"].visually-hidden {
 
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .caption {
@@ -205,8 +205,8 @@ input[type="checkbox"].visually-hidden {
 .offer-title {
   position: relative;
 
-  margin-bottom: 20px;
-  margin-top: 165px;
+  margin-bottom: 25px;
+  margin-top: 160px;
 }
 
 .offer-house::before {
@@ -253,7 +253,7 @@ input[type="checkbox"].visually-hidden {
 
 }
 .feature-title {
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 25px;
 }
 
@@ -314,10 +314,6 @@ input[type="checkbox"].visually-hidden {
   max-width: 800px;
 }
 
-.modal-data-current {
-  position: relative;
-}
-
 .modal-title {
 	font-size: 30px;
   line-height: 36px;
@@ -361,6 +357,8 @@ input[type="checkbox"].visually-hidden {
   background-color: #766357;
 
   padding: 30px 143px;
+
+  position: relative;
 }
 
 .modal-close:hover,
@@ -386,6 +384,7 @@ input[type="checkbox"].visually-hidden {
   left: 50%;
   margin-left: -285px;
   padding: 55px;
+  z-index: 3;
 }
 
 .modal-show {
@@ -426,6 +425,16 @@ input[type="checkbox"].visually-hidden {
   font-weight: bold;
   line-height: 26px;
   position: relative;
+
+  margin-bottom: 25px;
+}
+
+.modal-form-group:nth-child(2){
+  margin-bottom: 30px;
+}
+
+.modal-form-group:last-child {
+  margin-bottom: 55px;
 }
 
 .modal-form-group input {
@@ -445,7 +454,7 @@ input[type="checkbox"].visually-hidden {
   padding: 6px 14px;
   padding-right: 40px;
 
-  margin-bottom: 30px;
+
 }
 
 .input-wrapper {
@@ -456,20 +465,20 @@ input[type="checkbox"].visually-hidden {
   flex-wrap: wrap;
 }
 
-.modal-form-group label{
+ label{
   margin-right: 15px;
-}
-
-.input-wrapper label:first-of-type {
-  margin-right: 75px;
 }
 
 .input-wrapper .modal-form-group:first-of-type {
   margin-right: 90px;
 }
 
-.input-wrapper label:last-of-type {
-  margin-right: 65px;
+.input-wrapper .modal-form-group > label {
+  margin-right: 75px;
+}
+
+.input-wrapper label[for="children"] {
+  margin-right: 55px;
 }
 
 .calendar {
@@ -503,7 +512,6 @@ input.select-adults  {
   width: 40px;
   height: 40px;
   padding: 5px 14px;
-  margin-bottom: 55px;
   position: relative;
 }
 
@@ -608,17 +616,23 @@ input.select-adults  {
 
 
 .map {
-  max-height: 475px;
+  max-height: 594px;
 }
-/*
-.map img {
+
+.map div {
   position: absolute;
-  top: 2175px;
-  right: 0;
-  margin: 0 auto;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-*/
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
 .main-footer {
   position: relative;
   max-height: 120px;
@@ -638,13 +652,6 @@ input.select-adults  {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -655,11 +662,13 @@ input.select-adults  {
   width: 400px;
   text-align: center;
 }
+
 .inviting {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  padding-top: 10px;
 }
 
 .social-list {
@@ -737,7 +746,7 @@ input.select-adults  {
 }
 
 .link:hover path,
-.link:focus path, {
+.link:focus path {
   fill: #82b4d2;
 }
 
@@ -876,7 +885,8 @@ input.select-adults  {
 .filter-button {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  margin-bottom: 32px;
+  padding: 6px 32px;
 
   font-size: 14px;
   line-height: 20px;
@@ -935,8 +945,8 @@ input.select-adults  {
 
   cursor: pointer;
 
-  padding-left: 60px;
-  padding-right: 5px;
+  margin-left: 65px;
+  margin-right: 5px;
 }
 
 .price-controls input {
@@ -944,10 +954,11 @@ input.select-adults  {
   font-size: 14px;
   line-height: 38px;
   vertical-align: middle;
+  text-align: left;
 }
 
 .price-controls .max-price {
-  padding-left: 90px;
+  margin-left: 90px;
 }
 
 .price-controls input {
@@ -1169,12 +1180,8 @@ input.select-adults  {
   -ms-flex-direction: column;
   flex-direction: column;
 
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
    -webkit-box-flex: 1; -ms-flex-positive: 1;
   flex-grow: 1;
@@ -1184,6 +1191,14 @@ input.select-adults  {
 .information p {
   margin: 0;
   padding: 0;
+}
+
+.hotel-name {
+  margin-bottom: 8px;
+}
+
+.information p:first-of-type {
+  margin-bottom: 10px;
 }
 
 .catalog-item:first-child .place {
@@ -1207,13 +1222,13 @@ input.select-adults  {
   padding: 0;
 
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 3px 15px;
 }
 
 .star-rating {
-  margin-top: 45px;
-  margin-bottom:45px;
+  margin-top: 30px;
+  margin-bottom:40px;
   margin-left: auto;
   width: 85px;
   height: 23px;
