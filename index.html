@@ -129,15 +129,16 @@
           </button>
 
 				  <form class="modal" action="https://echo.htmlacademy.ru" method="get">
-					 <div class="modal-form-group">
-						<label for="arrival-date">Дата заезда:</label>
-						<input class="select-arrival" id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-            <button class="calendar" type="button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+            <div class="date-selection">
+					   <div class="modal-form-group arrival">
+						  <label for="arrival-date">Дата заезда:</label>
+						  <input class="select-arrival" id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <button class="calendar" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
             </button>
 					 </div>
 
-					 <div class="modal-form-group">
+					 <div class="modal-form-group departure">
 						<label for="departure-date">Дата выезда:</label>
 						<input class="select-departure" id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
             <button class="calendar" type="button">
@@ -147,23 +148,36 @@
 
            <div class="input-wrapper">
 					   <div class="modal-form-group">
-						  <label for="adults">Взрослые:</label>
-              <button class="amount-btn minus" type="button"><span class="visually-hidden">Убавить</span></button>
-						  <input class="select-adults" id="adults" type="text" name="adults" value="" placeholder="2">
-              <button class="amount-btn plus" type="button"><span class="visually-hidden">Добавить</span></button>
+              <label for="adults">Взрослые:</label>
+              <div class="adults">
+               <div class="minus">
+                  <span class="visually-hidden">Убавить</span>
+                </div>
+						    <input class="select-adults" id="adults" type="text" name="adults" value="" placeholder="2">
+               <div class="plus">
+                 <span class="visually-hidden">Добавить</span>
+               </div>
+              </div>
             </div>
 
 					   <div class="modal-form-group">
 						  <label for="children">Дети:</label>
-              <button class="amount-btn minus" type="button"><span class="visually-hidden">Убавить</span></button>
-					    <input class="select-child" id="children" type="text" name="children" value="" placeholder="0">
-              <button class="amount-btn plus" type="button"><span class="visually-hidden">Добавить</span></button>
+              <div class="child">
+               <div class="minus">
+                  <span class="visually-hidden">Убавить</span>
+                </div>
+					      <input class="select-child" id="children" type="text" name="children" value="" placeholder="0">
+                <div class="plus">
+                 <span class="visually-hidden">Добавить</span>
+               </div>
+              </div>
 					  </div>
           </div>
 
 				<button class="button search" type="submit">Найти</button>
-       </form>
-		 </section>
+      </div>
+    </form>
+	 </section>
 
        <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
