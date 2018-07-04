@@ -5,7 +5,7 @@
     <title>Sedona hotels</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper-shadow">
@@ -108,17 +108,18 @@
       </div>
 
       <div class="switch">
-        <span class="switch-up">
-          <a href="#">
+        <div class="switch-up">
+          <a href="#"><span class="visually-hidden">По возрастанию</span>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-              <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/><span class="visually-hidden">По возрастанию</span>
-            </svg></a>
-        </span>
-        <span class="switch-down switch-current">
-          <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/><span class="visually-hidden">По убыванию</span></svg></a>
-        </span>
+              <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/></svg>
+          </a>
+        </div>
+        <div class="switch-down switch-current">
+          <a href="#"><span class="visually-hidden">По убыванию</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -146,7 +147,9 @@
               </p>
             </div>
             <div class="ratings-item">
-              <div class="star-rating"></div>
+              <div class="star-rating">
+                <span class="visually-hidden">Количество звезд отеля</span>
+              </div>
                 <p>Рейтинг: 8,5</p>
               </div>
             </li>
@@ -171,7 +174,9 @@
                 </p>
               </div>
               <div class="ratings-item">
-                <div class="star-rating star-rating-1"></div>
+                <div class="star-rating star-rating-1">
+                  <span class="visually-hidden">Количество звезд отеля</span>
+                </div>
                 <p>Рейтинг: 8,9</p>
               </div>
             </li>
@@ -196,7 +201,9 @@
                   </p>
                 </div>
                 <div class="ratings-item">
-                  <div class="star-rating star-rating-2"></div>
+                  <div class="star-rating star-rating-2">
+                    <span class="visually-hidden">Количество звезд отеля</span>
+                  </div>
                   <p>Рейтинг: 9,2</p>
                 </div>
             </li>
