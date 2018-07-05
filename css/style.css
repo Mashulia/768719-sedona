@@ -981,13 +981,6 @@ input[type="checkbox"].visually-hidden {
 }
 
 .value {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   width: 318px;
   margin-left: auto;
 
@@ -1058,7 +1051,7 @@ input[type="checkbox"].visually-hidden {
   width: 2px;
   height: 22px;
 
-  background: #ffffff;
+  background-color: #ffffff;
 
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -1067,37 +1060,33 @@ input[type="checkbox"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
-  margin-left: 65px;
-  margin-right: 5px;
 
   font-size: 14px;
   line-height: 38px;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
 
   cursor: pointer;
 }
 
-.price-controls input {
-  display: inline-block;
-
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: middle;
-  text-align: left;
+.price-controls .min-price {
+  width: 86px;
+  padding-left: 59px;
 }
 
-.price-controls .max-price {
-  margin-left: 90px;
+ .price-controls .max-price {
+  width: 99px;
+  padding-left: 70px;
 }
 
 .price-controls input {
-  width: 35px;
+  width: 50px;
+  height: 36px;
   margin: 0;
+  outline: none;
 
   color: inherit;
   font: inherit;
-  vertical-align: middle;
 
   background: none;
   border: none;
