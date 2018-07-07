@@ -67,4 +67,4 @@ popup.addEventListener("submit", function(evt) {
 });
 
 document.documentElement
-    .classList.replace('no-js', 'js');
+    .classList.replace("no-js", "js");
