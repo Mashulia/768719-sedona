@@ -342,6 +342,8 @@ input[type="checkbox"].visually-hidden {
 
 .description {
   width: 400px;
+  padding-left: 47px;
+  padding-right: 47px;
 }
 
 .portrait {
@@ -476,6 +478,7 @@ input[type="checkbox"].visually-hidden {
         transform: translateY(0);
     }
 }
+
 @keyframes modal-open {
     0% {
         -webkit-transform: translateY(-80px);
@@ -519,6 +522,7 @@ input[type="checkbox"].visually-hidden {
     background-color: rgba(250, 170, 183, 0.2);
   }
 }
+
 @keyframes wrong {
   0%,
   100% {
@@ -825,6 +829,9 @@ input::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 35px;
   padding-bottom: 35px;
 
@@ -840,8 +847,6 @@ input::placeholder {
 }
 
 .inviting {
-  padding-top: 10px;
-
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -1010,7 +1015,7 @@ input::placeholder {
   top: -2px;
   left: -40px;
 
-  width: 23px;
+  width: 27px;
   height: 23px;
 }
 
@@ -1033,6 +1038,7 @@ input::placeholder {
   cursor: default;
   border: none;
 }
+
 
 .filter-input:hover + label::before,
 .filter-input:hover + label::after,
@@ -1074,6 +1080,7 @@ input::placeholder {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  word-wrap: break-word;
 
   background: transparent;
   border: 2px solid #ffffff;
@@ -1209,20 +1216,17 @@ input::placeholder {
   cursor: pointer;
 }
 
+.range-toggle:hover,
+.range-toggle:focus {
+  transform: scale(1.1);
+}
+
 .range-toggle-min {
   left: 0;
 }
 
 .range-toggle-max {
   left: 80%;
-}
-
-.range-toggle:hover,
-.range-toggle:focus {
-  top: -9px;
-
-  width: 22px;
-  height: 22px;
 }
 
 .catalog-header {

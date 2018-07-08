@@ -20,6 +20,12 @@ try {
     isStorageSupport = false;
 }
 
+document.documentElement
+    .classList.replace("no-js", "js");
+
+    popup.classList.remove("modal-show");
+
+
 link.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-show");
@@ -66,5 +72,11 @@ popup.addEventListener("submit", function(evt) {
     }
 });
 
-document.documentElement
-    .classList.replace("no-js", "js");
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
