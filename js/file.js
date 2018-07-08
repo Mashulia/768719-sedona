@@ -20,8 +20,8 @@ try {
     isStorageSupport = false;
 }
 
-document.documentElement
-    .classList.replace("no-js", "js");
+// document.documentElement
+//     .classList.replace("no-js", "js");
 
     popup.classList.remove("modal-show");
 
