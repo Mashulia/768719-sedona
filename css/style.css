@@ -96,10 +96,9 @@ input[type="checkbox"].visually-hidden {
 .main-navigation {
   position: relative;
 
-  max-width: 1200px;
   min-height: 56px;
   margin: 0;
-  padding: 0 72px;
+  padding: 0 6%;
 
   line-height: 26px;
   font-weight: bold;
@@ -110,10 +109,12 @@ input[type="checkbox"].visually-hidden {
 
 .main-header-logo {
   position: absolute;
-  left: 530px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 138px;
   height: 70px;
@@ -126,30 +127,44 @@ input[type="checkbox"].visually-hidden {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 1056px;
+  min-width: 678px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 .site-navigation-item {
-  min-width: 240px;
-  max-width: 240px;
+  width: 20%;
   padding-bottom: 15px;
   padding-top: 15px;
 
   word-wrap: break-word;
 }
 
-.site-navigation-item:nth-of-type(4n+3){
-    margin-left: 95px;
-    text-align: right;
+.site-navigation-item:nth-child(4n+2),
+.site-navigation-item:nth-of-type(4n+1){
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+
+    text-align: left;
 }
 
-.site-navigation-item:first-child,
-.site-navigation-item:nth-child(2n+2) {
-  text-align: left;
+.site-navigation-item:nth-child(4n+2) {
+  margin-right: 20%;
+  padding-left: 3%;
 }
 
-.site-navigation-item:nth-child(4n) {
+.site-navigation-item:nth-child(4n+3) {
+  padding-right: 3%;
+}
+
+.site-navigation-item:nth-child(4n),
+.site-navigation-item:nth-of-type(4n+3) {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+
   text-align: right;
 }
 
@@ -162,10 +177,14 @@ input[type="checkbox"].visually-hidden {
 .invitation {
   position: relative;
 
+  width: 100%;
   height: 510px;
+  margin-right: 0;
+  margin-left: 0;
+
   text-align: center;
 
-  background: url("../img/main-background.jpg") no-repeat 50% -85px;
+  background: url("../img/main-background.jpg") no-repeat 50% 28%;
   background-size: cover;
   background-color: #81b3d2;
 }
@@ -177,11 +196,14 @@ input[type="checkbox"].visually-hidden {
   bottom: 0;
   left: 0;
 
+  min-width: 768px;
+  max-width: 1200px;
   width: 100%;
   height: 57px;
 
   background-image: url("../img/Shape.png");
   background-repeat: no-repeat;
+  background-position: center 0;
   background-size: cover;
 }
 
@@ -214,6 +236,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  width: 100%;
 }
 
 .offers-item,
@@ -223,7 +246,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .offers-item {
-  min-width: 400px;
+  min-width: 33%;
 }
 
 .offer-reclame {
@@ -305,9 +328,14 @@ input[type="checkbox"].visually-hidden {
 
 .feature-city,
 .feature-bridge {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-height: 256px;
 
   color: #ffffff;
 
@@ -336,20 +364,38 @@ input[type="checkbox"].visually-hidden {
   justify-content: space-around;
 
   margin-bottom: 50px;
+  width: 100%;
 
   background-color: #eeeeee;
 }
 
-.description {
-  width: 400px;
-  padding-left: 47px;
-  padding-right: 47px;
+.feature-item {
+  width: 33%;
+  padding-left: 43px;
+  padding-right: 43px;
+}
+
+
+.feature-city .description,
+.feature-bridge .description {
+  width: 33%;
+  padding-left: 43px;
+  padding-right: 43px;
 }
 
 .portrait {
-  width: 800px;
-  height: auto;
-  vertical-align: top;
+  position: absolute;
+  top: 0%;
+
+  width: 67%;
+}
+
+.portrait-1 {
+  left: 33%;
+}
+
+.portrait-2 {
+  right: 33%;
 }
 
 .modal-title {
@@ -841,7 +887,7 @@ input::placeholder {
 .inviting,
 .social,
 .footer-copyright {
-  width: 400px;
+  width: 33%;
 
   text-align: center;
 }
@@ -940,7 +986,8 @@ input::placeholder {
 }
 
 .filters {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 768px;
   padding: 0 72px;
 
   color: #ffffff;
@@ -1236,7 +1283,6 @@ input::placeholder {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 1200px;
   padding: 0 72px;
 }
 
@@ -1428,6 +1474,7 @@ input::placeholder {
 
   text-align: center;
   color: #666666;
+  white-space: nowrap;
 
   background-color: #f2f2f2;
 }
